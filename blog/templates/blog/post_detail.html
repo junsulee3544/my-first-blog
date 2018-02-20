@@ -12,5 +12,6 @@
         {% endif %}
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
+		<a type="button" class="save btn btn-default" href="{% url 'post_list' %}">List</a>
     </div>
 {% endblock %}
